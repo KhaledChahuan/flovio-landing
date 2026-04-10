@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Flovio — Gestiona tu negocio, sin complicaciones</title>
   <meta name="description" content="La plataforma modular para pymes chilenas. Ventas, POS, catálogo y más. Centraliza tu operación desde $667 al día.">
   <meta property="og:title" content="Flovio — Tu negocio, bajo control.">
@@ -787,7 +787,8 @@
 
     /* ─── RESPONSIVE ────────────────────────────────── */
     @media (max-width: 768px) {
-      .nav-inner { padding: 0 1.25rem; height: 58px; }
+      nav { padding-top: calc(0.75rem + env(safe-area-inset-top)); padding-left: 1.25rem; padding-right: 1.25rem; }
+      .nav-inner { padding: 0; height: 58px; }
       .nav-actions { gap: 6px; }
 
       .hero { padding: 110px 0 70px; }
